@@ -8,28 +8,23 @@
     <title>Stopwach</title>
 </head>
 <body>
-
-    <div class="stopwatch">
-        <div class="display">
-            <h1 class="hour">00</h3>
-            <h1 class="colon">:</h3>
-            <h1 class="minute">00</h3>
-            <h1 class="colon">:</h3>
-            <h1 class="second">00</h3>
-    
-        </div>
-        <div class="StopwachButtons">
-            <button type="button" onclick="stw.start()">Start</button>
-            <button type="button" onclick="stw.stop()">Stop</button>
-            <button type="button" onclick="stw.reset()">Reset</button>
-    
-        </div>        
+    <button  onclick="foo()" id="newStopwachButton">New Stopwatch</button>
+    <div id="stwContainer">
 
 
     </div>
 
 
+
     <script src="stopwatch.js"></script>
+    <script>
+        var container = document.getElementById('stwContainer');
+        new Stopwatch( container );
+        function foo() { 
+            new Stopwatch( container );
+        }
+    </script>
+
     
 
 
