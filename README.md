@@ -1,2 +1,2 @@
-# jq-stopwach
+# stopwatch
 

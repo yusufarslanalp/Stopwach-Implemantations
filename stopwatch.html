@@ -1,0 +1,33 @@
+
+
+<html>
+<head>
+    <link rel="stylesheet" href="stopwatch.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Stopwach</title>
+</head>
+<body>
+    <button  onclick="foo()" id="newStopwachButton">New Stopwatch</button>
+    <div id="stwContainer">
+
+
+    </div>
+
+
+
+    <script src="stopwatch.js"></script>
+    <script>
+        var container = document.getElementById('stwContainer');
+        new Stopwatch( container );
+        function foo() { 
+            new Stopwatch( container );
+        }
+    </script>
+
+    
+
+
+
+</body>
+</html>
