@@ -10,19 +10,20 @@ function Stopwatch( stwContainer ) {
 
 
     this.addButttonFunctions = function ( obj ) {
-        $( obj.divRef ).find( ".stwStartButton" ).click(function(){
+        var ref = $( obj.divRef );
+        ref.find( ".stwStartButton" ).click(function(){
             obj.start();
         });
 
-        $( obj.divRef ).find( ".stwStopButton" ).click(function(){
+        ref.find( ".stwStopButton" ).click(function(){
             obj.stop();
         });
 
-        $( obj.divRef ).find( ".stwResetButton" ).click(function(){
+        ref.find( ".stwResetButton" ).click(function(){
             obj.reset();
         });
 
-        $( obj.divRef ).find( ".stwDeleteButton" ).click(function(){
+        ref.find( ".stwDeleteButton" ).click(function(){
             obj.delete();
         });
     }
@@ -30,7 +31,8 @@ function Stopwatch( stwContainer ) {
     
     this.createHtml = function () {
         this.divRef = document.createElement("DIV");
-        $( this.divRef ).addClass("stopwatch");
+        var ref = $( this.divRef );
+        ref.addClass("stopwatch");
         var displayHtml = `  <div class="stwDisplay">
                                 <h1 class="stwHour">00</h3>
                                 <h1 class="stwColon">:</h3>
@@ -38,14 +40,14 @@ function Stopwatch( stwContainer ) {
                                 <h1 class="stwColon">:</h3>
                                 <h1 class="stwSecond">00</h3>
                             </div>`;
-        $( this.divRef ).append( displayHtml );
+        ref.append( displayHtml );
         var buttonsHtml = ` <div class="StopwachButtons">
                                        <button type="button" class="stwStartButton">Start</button>
                                        <button type="button" class="stwStopButton">Stop</button>
                                        <button type="button" class="stwResetButton">Reset</button>
                                        <button type="button" class="stwDeleteButton">Delete</button>                                  
                                     </div>`;
-        $( this.divRef ).append( buttonsHtml );
+        ref.append( buttonsHtml );
         $( stwContainer ).append( this.divRef );
     };
 
@@ -63,23 +65,26 @@ function Stopwatch( stwContainer ) {
         this.minute = parseInt( ( this.totalSec % 3600) / 60, 10 ); 
         this.hour = parseInt( this.totalSec / 3600, 10 );
 
-        $( this.divRef ).find( ".stwSecond" ).text( (this.displaySecond).pad(2) );
-        $( this.divRef ).find( ".stwMinute" ).text( (this.minute).pad(2) );
-        $( this.divRef ).find( ".stwHour" ).text( (this.hour).pad(2) );
+        var ref = $( this.divRef );
+        ref.find( ".stwSecond" ).text( (this.displaySecond).pad(2) );
+        ref.find( ".stwMinute" ).text( (this.minute).pad(2) );
+        ref.find( ".stwHour" ).text( (this.hour).pad(2) );
     }
 
     this.start = function() {
         this.startTime = true;
         this.incrementSecond();
-        $( this.divRef ).find( ".stwStartButton" ).hide();
-        $( this.divRef ).find( ".stwStopButton" ).show();
+        var ref = $( this.divRef );
+        ref.find( ".stwStartButton" ).hide();
+        ref.find( ".stwStopButton" ).show();
 
     }
 
     this.stop = function() {
         this.startTime = false;
-        $( this.divRef ).find( ".stwStartButton" ).show();
-        $( this.divRef ).find( ".stwStopButton" ).hide();      
+        var ref = $( this.divRef );
+        ref.find( ".stwStartButton" ).show();
+        ref.find( ".stwStopButton" ).hide();      
     }
 
     this.reset = function(){
