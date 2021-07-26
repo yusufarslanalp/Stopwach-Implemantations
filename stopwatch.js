@@ -28,11 +28,9 @@ function Stopwatch( stwContainer ) {
         });
     }
 
-    
     this.createHtml = function () {
         this.divRef = document.createElement("DIV");
         var ref = $( this.divRef );
-        ref.addClass("stopwatch");
         var displayHtml = `  <div class="stwDisplay">
                                 <h1 class="stwHour">00</h3>
                                 <h1 class="stwColon">:</h3>
@@ -48,10 +46,13 @@ function Stopwatch( stwContainer ) {
                                        <button type="button" class="stwDeleteButton">Delete</button>                                  
                                     </div>`;
         ref.append( buttonsHtml );
-        $( stwContainer ).append( this.divRef );
+        $( stwContainer ).append( ref );
+
+        ref.setBackGround();
+        ref.find( ".stwStopButton" ).setStopBtnStyle();
+        ref.find( ".stwHour, .stwMinute, .stwSecond, .stwColon" ).setDisplayStyle();
     };
 
-    
     this.incrementSecond = 	async function () {
         while ( this.startTime ) {
             this.displayTime();
@@ -98,10 +99,13 @@ function Stopwatch( stwContainer ) {
         $( this.divRef ).hide()
     }    
 
-    this.createHtml();
-    this.addButttonFunctions( this );
+	this.constructor = (function ( t ) {
+        t.createHtml();
+        t.addButttonFunctions( t );
+	})( this );	
 }
 
+$( "#newStopwachButton" ).setNewStwBtnStyle();        
 
 Number.prototype.pad = function(size) {
     var s = String(this);
