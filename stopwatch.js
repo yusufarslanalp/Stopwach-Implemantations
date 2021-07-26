@@ -101,8 +101,10 @@ function Stopwatch( stwContainer ) {
         this.divRef.style.display = "none"; 
     }    
 
-    this.createHtml();
-    this.addButttonFunctions( this );
+	this.constructor = (function ( t ) {
+        t.createHtml();
+        t.addButttonFunctions( t );
+	})( this );
 }
 
 
