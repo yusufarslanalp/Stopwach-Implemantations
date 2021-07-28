@@ -8,7 +8,6 @@ function Stopwatch( stwContainer ) {
     this.hour = 0;
     this.startTime = false;
 
-
     this.addButttonFunctions = function ( obj ) {
         var startButton = obj.divRef.getElementsByClassName("stwStartButton")[0];
         startButton.onclick = function(){
@@ -30,8 +29,6 @@ function Stopwatch( stwContainer ) {
             obj.delete();
         };
     }
-
-    
 
     this.createHtml = function () {
         this.divRef = document.createElement("DIV");
@@ -81,7 +78,6 @@ function Stopwatch( stwContainer ) {
         this.incrementSecond();
         this.divRef.getElementsByClassName("stwStartButton")[0].style.display = "none";
         this.divRef.getElementsByClassName("stwStopButton")[0].style.display = "inline";
-
     }
 
     this.stop = function() {
@@ -112,6 +108,5 @@ Number.prototype.pad = function(size) {
     var s = String(this);
     while (s.length < (size || 2)) {s = "0" + s;}
     return s;
-}  
-
+}
 

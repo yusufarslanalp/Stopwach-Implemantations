@@ -1,33 +1,25 @@
-
-
 <html>
 <head>
     <link rel="stylesheet" href="stopwatch.css">
+    <script src="stopwatch.js"></script>
     
-
     <title>Stopwach</title>
 </head>
 <body>
     <button  onclick="foo()" id="newStopwachButton">New Stopwatch</button>
-    <div id="stwContainer">
 
 
-    </div>
+    <div id="stwContainer">  </div>
 
-
-
-    <script src="stopwatch.js"></script>
     <script>
         var container = document.getElementById('stwContainer');
         new Stopwatch( container );
+
         function foo() { 
             new Stopwatch( container );
         }
     </script>
 
-    
-
-
-
 </body>
 </html>
+
