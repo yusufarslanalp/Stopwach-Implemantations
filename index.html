@@ -1,41 +1,35 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="stopwatch.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <head>
+    <title>Stopwach</title>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
 
-        <title>Stopwach</title>
-    </head>
+    <link rel="stylesheet" href="stopwatch.css">
+    <script src='app.module.js' ></script>
+    <script src='stopwatch.module.js' ></script>
+    <script src='stopwatch.component.js' ></script>
 
-    <body ng-app="myApp" ng-controller="myCtrl">
-        
-        <button id="newStopwachButton" ng-click="newStopwatch()">
-            New Stopwatch
-        </button>
 
-        <div ng-repeat="stw in stwArr">
-            <div class="stopwatch" ng-show="stw.show">
-                <div class="stwDisplay">
-                    <h1 class="stwHour"  ng-bind="getHour( stw )">00</h3>
-                    <h1 class="stwColon">:</h3>
-                    <h1 class="stwMinute"  ng-bind="getMinute( stw )">00</h3>
-                    <h1 class="stwColon">:</h3>
-                    <h1 class="stwSecond" ng-bind="getSecond( stw )">00</h3>
-                </div>
-                <div class="StopwachButtons">
-                    <button type="button" class="stwStartButton" ng-click="stw.start()" ng-show="stw.startBtnShow">
-                        Start
-                    </button>
-                    <button type="button" class="stwStopButton" ng-click="stw.stop()" ng-show="stw.stopBtnShow">
-                        Stop
-                    </button>
-                    <button type="button" class="stwResetButton" ng-click="stw.reset()">Reset</button>
-                    <button type="button" class="stwDeleteButton" ng-click="stw.delete()">Delete</button>                                  
-                </div>   
-            </div>
-        </div>
+  </head>
 
-        <script src="stopwatch.js"></script>
-        <script src="moduleAndController.js"></script>
-    </body>
+  
+  <body ng-app='stw'>
+
+    <button id="newStopwachButton" ng-controller="myCtrl" ng-click="newStopwach( )">
+      New Stopwach
+    </button>
+
+    <div id="stwList" >
+      <div style="display: flex; justify-content: center; margin-top: 20px">
+
+        <stopwatch></stopwatch>
+
+      </div>
+
+    </div>
+
+  </body>
 </html>
