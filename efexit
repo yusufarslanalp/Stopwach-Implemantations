@@ -1,0 +1,41 @@
+[33mcommit 5e03428c5300b17575174bbed675678f51197487[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Yusuf Abdullah Arslanalp <yusuf.arslanalp@piworks.net>
+Date:   Tue Aug 10 19:53:22 2021 +0300
+
+    refactor: some redundant files removed
+
+[33mcommit db595a1e74358d218ce70348dec3a957f31f57fc[m
+Author: Yusuf Abdullah Arslanalp <yusuf.arslanalp@piworks.net>
+Date:   Wed Jul 28 13:57:27 2021 +0300
+
+    refactor: a redundant function removed
+
+[33mcommit 39b448f3b537080acb30c7d73ceeb3d1c3f305ad[m
+Author: Yusuf Abdullah Arslanalp <yusuf.arslanalp@piworks.net>
+Date:   Wed Jul 28 13:54:45 2021 +0300
+
+    refactor: stopwach object turned from javascript object to native angularjs component
+
+[33mcommit 868c784a8df6b98a3166213eb3c7205fb647e977[m
+Author: Yusuf Abdullah Arslanalp <yusuf.arslanalp@piworks.net>
+Date:   Sat Jul 24 11:51:38 2021 +0300
+
+    docs: live demo link added to readme.md file
+
+[33mcommit ee07561d9ae7f9963c138d48bdac7be34c6edc4b[m
+Author: Yusuf Abdullah Arslanalp <yusuf.arslanalp@piworks.net>
+Date:   Sat Jul 24 11:17:32 2021 +0300
+
+    refactor: name of stopwach.html file converted to index.html
+
+[33mcommit 8edce28434997d40e19e17ac1aff892ddf5bc4ba[m
+Author: Yusuf Abdullah Arslanalp <yusuf.arslanalp@piworks.net>
+Date:   Thu Jul 22 16:09:31 2021 +0300
+
+    feat: inital commit
+
+[33mcommit c1e66856e286118e66f52c45c800c6559222c225[m
+Author: Yusuf Abdullah Arslanalp <yusuf.arslanalp@piworks.net>
+Date:   Thu Jul 22 16:40:16 2021 +0000
+
+    Initial commit

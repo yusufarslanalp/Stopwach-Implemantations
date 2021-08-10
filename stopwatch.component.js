@@ -1,3 +1,5 @@
+angular.module('stopwatch', []);
+
 angular.module('stopwatch').
     component('stopwatch', {
         template: `<div class="stopwatch">
