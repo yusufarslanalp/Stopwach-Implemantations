@@ -11,7 +11,7 @@ Import the files into the head tag of the html file.
 Give the html element to the stopwach object.
 
 
-<img src="appendPNG.PNG" >
+<img src="append.PNG" >
 
 
 ### Docker Usage
