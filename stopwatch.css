@@ -1,19 +1,43 @@
 .stopwatch{
     width: 200px;
-    padding: 30px;
     background-color: grey;
     margin:20 auto;
 
 }
 
+.stwCollapsed{
+    width: 200px;
+    background-color: grey;
+    margin: auto;
+}
+
+.collapseBtn{
+    width: 30;
+    height: 30;
+}
+
+.expandBtn{
+    width: 30;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.stwBottom{
+    padding-bottom: 20px;
+    padding-left: 20px; 
+    padding-top: 10px;
+
+}
+
+
 .stwHour, .stwMinute, .stwSecond{
     color: blue;
-    display: inline-block;
+    display: inline;
 }
 
 .stwColon{
     color: blue;
-    display: inline-block;
+    display: inline;
 }
 
 .stwStopButton{
