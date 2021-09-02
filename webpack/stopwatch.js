@@ -1,4 +1,5 @@
 import angular from "angular";
+import $ from 'jQuery'
 
 export const myModule = angular.module(
 	'stopwatch',

@@ -48,10 +48,10 @@ module.exports = {
             "template": "./webpack/index.html"
         }),
 		new clean.CleanWebpackPlugin(),
-		new webpack.ProvidePlugin({
-			$: "jquery",
-			jQuery: "jquery"
-		   })
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery"
+          })
 
     ]
 };
