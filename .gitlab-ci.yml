@@ -1,5 +1,8 @@
+include: 'https://gitlab.piworks.net/devops/k8s-files/raw/master/.gitlab-ci-templates.yml'
+
 stages:
     - docker-build
+    - k8s
 
 Build and push Docker image:
   stage: docker-build

@@ -1,0 +1,16 @@
+{
+    "namespace": "__KUBE_NAMESPACE__",
+    "ci_project_path_slug": "__CI_PROJECT_PATH_SLUG__",
+    "ci_environment_slug": "__CI_ENVIRONMENT_SLUG__",
+    "apps": [
+        {
+            "name": "app",
+            "port": 80,
+            "pi_registry_image": {
+                "path": "__DOCKER_IMAGE_NAME__",
+                "tag": "__VERSION__"
+            },
+            "os": "linux"
+        }
+    ]
+}
