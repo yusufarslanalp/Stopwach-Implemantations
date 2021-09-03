@@ -1,5 +1,5 @@
 stages:
-    -docker-build
+    - docker-build
 
 Build and push Docker image:
   stage: docker-build
