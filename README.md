@@ -10,7 +10,7 @@ The project has three other branches:
 
 [AngularJS-Stopwach](https://github.com/yusufarslanalp/Stopwach-Implemantations/tree/AngularJS-Stopwach)
 
-The stopwach implemented with three ways for learning puposes. These ways are implementaion with pure javascript, implementaion with Jquery and implementaion with AngularJS. You can access each implemantation from above branches. Each implemantation (branch) has its own Readme.md file.
+The stopwach implemented with three ways for learning puposes. These ways are: implementaion with pure javascript, implementaion with Jquery and implementaion with AngularJS. You can access each implemantation from above branches. Each implemantation (branch) has its own Readme.md file.
 
 Live demo of each implemantations are the following:
 
